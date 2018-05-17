@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/usain7/ontologies/2018/3/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/usain7/ontologies/2018/3/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/usain7/ontologies/2018/3/untitled-ontology-8#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#dw_southwest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#East"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Brad_Steven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#de_southeast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Duncan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#t_hasForPlayers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Houston"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Celtics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dw_pacific"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Portland"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Pippen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Lakers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Spurs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Pierce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfConf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#West"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Korver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Kobe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Warriors"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conf_west"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Phil_Jackson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Cavaliers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#de_atlantic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Greg_Poppovich"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeadCoach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#t_hasForCoach"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Bulls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Tyron_Lue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_MJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conf_east"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Luke_Walton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Magic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayerOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#de_central"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Bird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hc_Steve_Kerr"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dw_northwest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_LBJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#p_Robinson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#t_Miami"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Player"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#East"/>
+        <Class IRI="#Conference"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeadCoach"/>
+        <Class IRI="#Personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Player"/>
+        <Class IRI="#Personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#West"/>
+        <Class IRI="#Conference"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Equipe"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#East"/>
+        <Class IRI="#West"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Equipe"/>
+        <Class IRI="#Personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HeadCoach"/>
+        <Class IRI="#Player"/>
+    </DisjointClasses>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#de_atlantic"/>
+        <NamedIndividual IRI="#conf_east"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#de_central"/>
+        <NamedIndividual IRI="#conf_east"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#de_southeast"/>
+        <NamedIndividual IRI="#conf_east"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#dw_northwest"/>
+        <NamedIndividual IRI="#conf_west"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#dw_pacific"/>
+        <NamedIndividual IRI="#conf_west"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <NamedIndividual IRI="#dw_southwest"/>
+        <NamedIndividual IRI="#conf_west"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Brad_Steven"/>
+        <NamedIndividual IRI="#t_Celtics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Greg_Poppovich"/>
+        <NamedIndividual IRI="#t_Spurs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Luke_Walton"/>
+        <NamedIndividual IRI="#t_Lakers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Phil_Jackson"/>
+        <NamedIndividual IRI="#t_Bulls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Steve_Kerr"/>
+        <NamedIndividual IRI="#t_Warriors"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <NamedIndividual IRI="#hc_Tyron_Lue"/>
+        <NamedIndividual IRI="#t_Cavaliers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Bird"/>
+        <NamedIndividual IRI="#t_Celtics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Duncan"/>
+        <NamedIndividual IRI="#t_Spurs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Kobe"/>
+        <NamedIndividual IRI="#t_Lakers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Korver"/>
+        <NamedIndividual IRI="#t_Cavaliers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_LBJ"/>
+        <NamedIndividual IRI="#t_Cavaliers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_MJ"/>
+        <NamedIndividual IRI="#t_Bulls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Magic"/>
+        <NamedIndividual IRI="#t_Lakers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Pierce"/>
+        <NamedIndividual IRI="#t_Celtics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Pippen"/>
+        <NamedIndividual IRI="#t_Bulls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <NamedIndividual IRI="#p_Robinson"/>
+        <NamedIndividual IRI="#t_Spurs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <NamedIndividual IRI="#t_Bulls"/>
+        <NamedIndividual IRI="#de_central"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <NamedIndividual IRI="#t_Cavaliers"/>
+        <NamedIndividual IRI="#de_central"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <NamedIndividual IRI="#t_Celtics"/>
+        <NamedIndividual IRI="#de_atlantic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <NamedIndividual IRI="#t_Houston"/>
+        <NamedIndividual IRI="#dw_southwest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <NamedIndividual IRI="#t_Lakers"/>
+        <NamedIndividual IRI="#dw_pacific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <NamedIndividual IRI="#t_Miami"/>
+        <NamedIndividual IRI="#de_southeast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <NamedIndividual IRI="#t_Portland"/>
+        <NamedIndividual IRI="#dw_northwest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <NamedIndividual IRI="#t_Spurs"/>
+        <NamedIndividual IRI="#dw_pacific"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <NamedIndividual IRI="#t_Warriors"/>
+        <NamedIndividual IRI="#dw_pacific"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <ObjectProperty IRI="#isPartOfConf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <ObjectProperty IRI="#isPartOfConf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <ObjectProperty IRI="#t_hasForCoach"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <ObjectProperty IRI="#t_hasForPlayers"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#t_hasForCoach"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isPartOfConf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <Class IRI="#HeadCoach"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isHeadCoachOf"/>
+            <Class IRI="#Equipe"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <Class IRI="#Player"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#isPlayerOf"/>
+            <Class IRI="#Equipe"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <Class IRI="#Equipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOfDivEast"/>
+        <Class IRI="#East"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOfDivWest"/>
+        <Class IRI="#West"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfConf"/>
+        <ObjectUnionOf>
+            <Class IRI="#East"/>
+            <Class IRI="#West"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayerOf"/>
+        <Class IRI="#Equipe"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#isHeadCoachOf"/>
+        <ObjectProperty IRI="#isPlayerOf"/>
+    </DisjointObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

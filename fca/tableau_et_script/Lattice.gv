@@ -1,0 +1,92 @@
+// <Lattice object of 3 atoms 23 concepts 5 coatoms at 0x7f6b8dad17f0>
+digraph Lattice {
+	node [label="" shape=circle style=filled width=.25]
+	edge [dir=none labeldistance=1.5 minlen=2]
+	c0
+	c0 -> c0 [color=transparent headlabel=cle labelangle=270]
+	c1
+	c1 -> c1 [color=transparent headlabel=gsw labelangle=270]
+	c1 -> c0
+	c2
+	c2 -> c2 [color=transparent headlabel=mia labelangle=270]
+	c2 -> c0
+	c3
+	c3 -> c3 [color=transparent headlabel=bos labelangle=270]
+	c3 -> c0
+	c4
+	c4 -> c1
+	c4 -> c2
+	c5
+	c5 -> c1
+	c5 -> c3
+	c6
+	c6 -> c6 [color=transparent headlabel=hou labelangle=270]
+	c6 -> c1
+	c7
+	c7 -> c2
+	c7 -> c3
+	c8
+	c8 -> c8 [color=transparent headlabel=nyc labelangle=270]
+	c8 -> c2
+	c9
+	c9 -> c9 [color=transparent headlabel=chi labelangle=270]
+	c9 -> c2
+	c10
+	c10 -> c10 [color=transparent headlabel=tor labelangle=270]
+	c10 -> c3
+	c11
+	c11 -> c11 [color=transparent headlabel=lal labelangle=270]
+	c11 -> c4
+	c12
+	c12 -> c12 [color=transparent headlabel=okc labelangle=270]
+	c12 -> c4
+	c13
+	c13 -> c13 [color=transparent headlabel=sa labelangle=270]
+	c13 -> c4
+	c13 -> c5
+	c13 -> c7
+	c14
+	c14 -> c6
+	c14 -> c12
+	c15
+	c15 -> c15 [color=transparent labelangle=90 taillabel=contenders]
+	c15 -> c5
+	c15 -> c6
+	c15 -> c10
+	c16
+	c16 -> c16 [color=transparent labelangle=90 taillabel=titre_10]
+	c16 -> c11
+	c16 -> c13
+	c17
+	c17 -> c17 [color=transparent labelangle=90 taillabel=mvp_10]
+	c17 -> c9
+	c17 -> c11
+	c17 -> c12
+	c18
+	c18 -> c18 [color=transparent labelangle=90 taillabel=scorer_10]
+	c18 -> c8
+	c18 -> c14
+	c19
+	c19 -> c19 [color=transparent headlabel="mil phily" labelangle=270]
+	c19 -> c7
+	c19 -> c10
+	c20
+	c20 -> c20 [color=transparent labelangle=90 taillabel=conf_est]
+	c20 -> c8
+	c20 -> c9
+	c20 -> c19
+	c21
+	c21 -> c21 [color=transparent headlabel="utah no" labelangle=270]
+	c21 -> c21 [color=transparent labelangle=90 taillabel=playoffs_2018]
+	c21 -> c13
+	c21 -> c14
+	c21 -> c15
+	c21 -> c19
+	c22
+	c22 -> c22 [color=transparent headlabel=denver labelangle=270]
+	c22 -> c16
+	c22 -> c17
+	c22 -> c18
+	c22 -> c20
+	c22 -> c21
+}

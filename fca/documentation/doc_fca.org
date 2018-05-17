@@ -1,0 +1,87 @@
+* ++ options ++                                                                 :prelim:
+** Infos
+   #+AUTHOR: Gueye Ousseynou
+   #+EMAIL: 21505055.
+   #+TITLE: *Documentation devoir sur FCA* \\ Cours de logique - S6
+
+   #+OPTIONS:   author:t timestamp:t email:t
+   #+LANGUAGE: en
+
+** Tags
+   #+TAGS:  prelim(p) noexport(n)
+   #+EXCLUDE_TAGS: noexport prelim
+
+** Latex
+*** compiler
+    #+latex_compiler: lualatex
+*** class
+    #+LATEX_CLASS: myarticle
+    #+LATEX_CLASS_OPTIONS: [a4paper,11pt]
+*** margins
+    #+LATEX_HEADER: \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+*** others
+    #+OPTIONS: tex:t          Do the right thing automatically (MathJax)
+    #+OPTIONS: LaTeX:nil
+
+** Meta-info
+   #+DESCRIPTION: ...
+   #+CREATOR: ...
+
+** Others
+   #+OPTIONS:   H:3 num:t toc:3
+   #+OPTIONS: skip:nil d:nil todo:t pri:nil tags:not-in-toc
+   #+OPTIONS: \n:t ^:nil # to export underscore as underscore
+
+
+
+* Sujet
+
+Réaliser une analyse formelle de concepts sur la NBA, ligue de basketball américaine.
+
+* Concepts utilisés
+
+- *conf_est* : Pour des raisons géographiques, la NBA division les équipes en deux conférences est et ouest. Chaque équipe est soit dans l'une, soit dans l'autre.
+
+- *playoffs_2018* : la NBA est active entre octobre et juin. La saison est divisée en deux partie : une *saison régulière*, où chaque équipe (32) joue un total de 82 matchs. À l'issue de la saison réguliére, les 16 meilleures équipe s'affrontent dans ce que l'on appelle les *playoffs*. Chaque couple d'équipes s'affronte au meilleur de 7 matchs, le vainqueur accédant au niveau suivant.
+
+Nous avons : le 1er tour, les demi-finales de conférences, les finales de conférences et la grande finale.
+
+Dans cette colonne, on regarde les équipes qualifiées pour les playoffs de cette année 2017-2018.
+
+- *mvp_10* : à l'issue de la saisons régulières dont nous avons parlé, on élit le MVP pour most valuable player. C'est probablement la plus haute distinction, à part celle de gagner le titre.
+
+Dans cette colonne, on regarde les équipes dont un des joueurs fut MVP au cours des 10 dernières années.
+
+- *titre_10* : dans cette colonne, on regarde les équipes ayant gagné le titre au cours des 10 dernières années.
+
+- *contenders* : Simple prédiction, j'ai considéré les équipes me paraissant pouvoir concourir pour gagner le titre. C'était il y a un mois, donc juste au début des playoffs.
+
+* Résultats et interprétation
+
+Voici le rendu, que nous avons modifié pour faire apparaitre ce que nous avons trouvé intéressant
+
+[[./img/rendu_annote.jpg]]
+
+** Interprétation
+
+- *En rouge* : nous avons deux équipes : Cleveland et Denver, placées aux deux sommets de notre image.
+
+Pour faire simple, Cleveland est proche de ce que la NBA peut donner de meilleur, aussi bien en terme de résultats collectifs que de récompenses individuelles.
+
+De l'autre côté, Denver est ce qu'il y a de pire. En plus de 10 ans où je suis la NBA, je n'ai jamais vu denver gagné la moindre petite chose.
+
+Cependant, il est intéressant de noter que la réussite de Cleveland, tient à un seul homme : Lebron James.
+
+Paraphrasant Lamartine, je dirais que parfois il suffit d'un seul joueur pour que tout vous réussisse.
+
+- *En bleu* : ce sont les seuls points que deux équipes partagent : d'un côté (Utah et New Orleans), de l'autre (Milwaukee et Philadelphia). Le regroupement est d'abord dû à la conférence.
+
+Ces 4 équipes sont en playoffs, mais trop jeunes, elles n'espéraient pas gagner le titre. Par contre, chacune d´elle peut représenter le futur de sa conférence. Ainsi, si nous refaisons le même tableau dans quelques années, je pense que de chaque couple ne restera qu'une équipe.
+
+- *En orange* : nous avons une équipe (Miami) qui malgré des résultats modestes cette année est bien placée. C'est surtout du à son passé. Et la passage d'un homme : Lebron James qui y a joué de 2010 à 2014.
+
+- *En vert* : Nous avons 5 équipes : Toronto, Houston, Boston, Golden State et Cleveland.
+
+N'oublions pas que le concept "contenders" était basé sur nos prévisions. Un mois plus tard, nous sommes aux finales de conférences, donc il ne reste que 4 équipes en compétitions. Et il se trouve que les 4 équipes les plus à droite sont celles restantes. La seule éliminée est Toronto.
+
+Le pari fut donc gagnant.
