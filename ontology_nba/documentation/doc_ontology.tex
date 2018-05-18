@@ -65,7 +65,7 @@
 \section{Sujet}
 \label{sec-1}
 
-Il s'agit de créer une ontologie en rapport avec le sujet de la FCA à savoir la NBA.
+Il s'agit de créer une ontologie (via Protégée) en rapport avec le sujet de la FCA à savoir la NBA.
 
 \section{Description de l'ontologie}
 \label{sec-2}
@@ -88,6 +88,7 @@ Pour les classes, nous avons :
 
 Les trois classes en gras sont disjointes, de même que celles de même niveau.
 
+\newpage
 \subsection{Propriétés}
 
 Pour les propriétés, nous avons :
@@ -105,6 +106,7 @@ Pour les propriétés, nous avons :
             
             \includegraphics[width=.75\linewidth]{./img/3.png} \\
             
+            \newpage
             \item isMemberOfDivWest \\
             
             \includegraphics[width=.75\linewidth]{./img/4.png} \\
@@ -119,6 +121,7 @@ Pour les propriétés, nous avons :
     
     \includegraphics[width=.75\linewidth]{./img/6.png} \\
     
+    \newpage
     \item \textbf{t\_hasForPlayers}
     
     \includegraphics[width=.75\linewidth]{./img/7.png} \\
@@ -129,11 +132,11 @@ Pour les propriétés, nous avons :
 
 Pour les individus créés, et à juste à titre d'indication pour le lecteur, nous avons fait précéder les appelations par : \\
 \begin{itemize}
-    \item \textbf{conf} = conference (2).
-    \item \textbf{d} = division (sous-partie d'une conférence) (6).
-    \item \textbf{hc} = head coach (6).
-    \item \textbf{p} = player (10).
-    \item \textbf{t} = team (8). 
+    \item \textbf{conf\_} = conference (2).
+    \item \textbf{d\_} = division (sous-partie d'une conférence) (6).
+    \item \textbf{hc\_} = head coach (6).
+    \item \textbf{p\_} = player (10).
+    \item \textbf{t\_} = team (8). 
 \end{itemize}
 
 \section{Liaisons et résultats du reasoner}
@@ -149,18 +152,41 @@ Notre but était, grâce aux propriétés, de donner pour chaque individu le min
 
 Pour les reasonner, nous avons utiliser HermiT et Fact++. \\
 
-La première, les reasonner ont détecté des incohérences que nous avons corrigées. \\
+La première fois, les reasonner ont détecté quelques incohérences que nous avons corrigées. \\
 
 Désormais, chaque individu est bien classé de même que plusieurs propriétés sont justement rajoutées. \\
 
 
+\newpage
 \section{Liens avec logique}
 \label{sec-4}
 
+~\\
 
-$\forall x $ individu(x) $\rightarrow$ conference(x) $\vee$ equipe(x) $\vee$ personne(x)
+\textbf{1) Tout individu est soit une conférence, une équipe ou une personne :}
+
+\begin{center}
+$\forall x $ (individu(x) $\rightarrow$ conference(x) $\vee$ equipe(x) $\vee$ personne(x))
+\end{center}
+
+\textbf{2) Certaines équipes font partie de la conférence Est} :
+
+\begin{center}
+$\exists x $ (equipe(x) $\wedge$ conf\_est(x))    
+\end{center}
+
+\textbf{3) Si un individu X a comme propriété isHeadCoach de l'indidu Y, cela veut dire que X est une personne et Y est une équipe :} 
+
+\begin{center}
+$\forall (x , y) $ (isHeadCoach(y , x) $\rightarrow$ personne(x) $\wedge$ equipe(y))    
+\end{center}
 
 
+\textbf{4) Si un individu X a comme propriété isPlayerOf Y, alors il existe un individu Y qui a comme propriété t\_hasForPlayers X :} 
+
+\begin{center}
+ $\forall x $ (individu(x) $\wedge$ isPlayerOf(y, x)) $ \rightarrow \exists y $ (equipe(y) $\wedge$ t\_hasForPlayers(x , y)    
+\end{center}
 
 
 
